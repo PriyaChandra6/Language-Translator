@@ -1,82 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">  
     <title>Free Language Translator</title>
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome CDN Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-         <!-- Standard favicon -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="image.png" type="image/x-icon">
-  </head>
-  <body>
+</head>
+<body>
+
     <div class="container">
         <h1>Advanced Language Translator Tool</h1>
         <div class="theme-toggle" title="Switch Mode">
-          <i class="fa fa-moon"></i>
-      </div>
-
-      <div class="wrapper">
-        <div class="text-input">
-          <div class="input-container">
-            <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
-          <i class="fas fa-microphone" id="microphone-icon"></i> 
-          <!-- Microphone Icon -->
-          </div>
-          <textarea spellcheck="false" readonly disabled class="to-text1" placeholder="Translation"></textarea>
-          <textarea spellcheck="false" readonly disabled class="to-text2" placeholder="Translation"></textarea>
+            <i class="fa fa-moon"></i>
         </div>
-        <ul class="controls">
-          <li class="row from">
 
-            <div class="icons1">
-              <i id="from" class="fas fa-volume-up"></i>
-              <i id="from" class="fas fa-copy" title="copy"></i>
+        <div class="wrapper">
+            <div class="text-input">
+                <div class="input-container">
+                    <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+                    <i class="fas fa-microphone" id="microphone-icon"></i> 
+                </div>
+                <textarea spellcheck="false" readonly disabled class="to-text1" placeholder="Translation"></textarea>
+                <textarea spellcheck="false" readonly disabled class="to-text2" placeholder="Translation"></textarea>
             </div>
-            <select></select>
-          </li>
 
-          <li class="exchange1"><i class="fas fa-exchange-alt"></i></li>
-          <li class="row to1">
-            <select></select>
-            <div class="icons1">
-              <i id="to1" class="fas fa-volume-up"></i>
-              <i id="to1" class="fas fa-copy"></i>
-            </div>
-          </li>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i class="fas fa-volume-up volume-btn"></i>
+                        <i class="fas fa-copy copy-btn" title="Copy"></i>
+                    </div>
+                    <select></select>
+                </li>
 
-          <li class="exchange2"><i class="fas fa-exchange-alt"></i></li>
-          <li class="row to2">
-            <select></select>
-            <div class="icons2">
-              <i id="to2" class="fas fa-volume-up"></i>
-              <i id="to2" class="fas fa-copy"></i>
-            </div>
-          </li>
-        </ul>
-      </div>
- 
-      <button class="translate-btn">Translate Text</button>
-      <button class="save-btn">Save Translation</button>
+                <li class="exchange1"><i class="fas fa-exchange-alt"></i></li>
+
+                <li class="row to1">
+                    <select></select>
+                    <div class="icons">
+                        <i class="fas fa-volume-up volume-btn"></i>
+                        <i class="fas fa-copy copy-btn"></i>
+                    </div>
+                </li>
+
+                <li class="exchange2"><i class="fas fa-exchange-alt"></i></li>
+
+                <li class="row to2">
+                    <select></select>
+                    <div class="icons">
+                        <i class="fas fa-volume-up volume-btn"></i>
+                        <i class="fas fa-copy copy-btn"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <button class="translate-btn">Translate Text</button>
+        <button class="save-btn">Save Translation</button>
     </div>
-    <!-- Add the saved translations section here -->
+
+    <!-- Saved Translations Section -->
     <div class="saved-translations hidden">
-      <h2>Saved Translations</h2>
-      <ul class="translations-list"></ul>
-    
-      <!-- Translation Detail View -->
-      <div class="translation-detail" style="display: none;">
-        <h3>Translation Details</h3>
-        <p><strong>From:</strong> <span class="detail-from">N/A</span></p>
-        <p><strong>To:</strong> <span class="detail-to1">N/A</span></p>
-      </div>
+        <h2>Saved Translations</h2>
+        <ul class="translations-list"></ul>
+        <div class="translation-detail" style="display: none;">
+            <h3>Translation Details</h3>
+            <p><strong>From:</strong> <span class="detail-from">N/A</span></p>
+            <p><strong>To:</strong> <span class="detail-to1">N/A</span></p>
+        </div>
     </div>
-    
 
-    <!-- <script src="countries.js"></script> -->
     <script src="index.js"></script>
 
-  </body>
+</body>
 </html>
-
