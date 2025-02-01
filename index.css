@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
   color: #333;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -70,28 +70,20 @@ h1 {
 .text-input textarea::placeholder{
   color: #b7b6b6;
 }
-.controls, li, .icons1, .icons1 i{
+.controls, li, .icons, .icons i{
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.controls, li, .icons2, .icons2 i{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 .controls{
   list-style: none;
   padding: 12px 15px;
 }
-.controls .row .icons1{
+.controls .row .icons{
   width: 38%;
 }
-.controls .row .icons2{
-  width: 38%;
-}
-.controls .row .icons1 i{
+.controls .row .icons i{
   width: 50px;
   color: #adadad;
   font-size: 14px;
@@ -99,30 +91,15 @@ h1 {
   transition: transform 0.2s ease;
   justify-content: center;
 }
-.controls .row.from .icons1{
+.controls .row.from .icons{
   padding-right: 15px;
   border-right: 1px solid #ccc;
 }
-.controls .row.to1 .icons1{
+.controls .row.to1 .icons{
   padding-left: 15px;
   border-left: 1px solid #ccc;
 }
-.controls .row .icons2 i{
-  width: 50px;
-  color: #adadad;
-  font-size: 14px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  justify-content: center;
-}
-/* .controls .row.from .icons2{
-  padding-right: 15px;
-  border-right: 1px solid #ccc;
-} */
-.controls .row.to2 .icons2{
-  padding-left: 15px;
-  border-left: 1px solid #ccc;
-}
+
 .controls .row select{
   color: #333;
   border: none;
